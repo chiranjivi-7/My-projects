@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="age" type="number" placeholder="Enter age"/>
+    <button onClick="check()">Age Checker</button>
+    <p id="statement">Drivers age will decide</p>
+    
+</body>
+</html>
+<script>
+  function check(){
+   let userAge=document.getElementById("age").value;
+
+   if(userAge>18){
+       document.getElementById("statement").innerText="Eligible to drive in India"
+   }
+   else if(userAge<18){
+       document.getElementById("statement").innerText="Have to wait till 18 Years"
+   }
+   else{
+       document.getElementById("statement").innerText="Can apply for licence and drive"
+   }
+  }
+</script>
